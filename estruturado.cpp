@@ -36,3 +36,11 @@ void atualizar(Jogo &jogo, float valor)
     if (jogo.horas > 0)
         jogo.custo = jogo.preco / jogo.horas;
 }
+
+void jogar(Jogo &jogo, int tempo)
+{
+    jogo.horas += tempo;
+
+    if (jogo.horas > 0)
+        jogo.custo = jogo.preco / jogo.horas;
+}
