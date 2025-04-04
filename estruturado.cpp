@@ -17,6 +17,15 @@ void exibir(const Jogo &jogo);
 
 int main()
 {
+    // variavel do tipo jogo
+    Jogo gow;
+
+    // chamada de funções
+    gow = adquirir("Gow", 160.0f);
+    exibir(gow);
+
+    jogar(gow, 5);
+    exibir(gow);
 }
 
 Jogo adquirir(const string &titulo, float valor)
