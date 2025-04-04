@@ -18,3 +18,13 @@ void exibir(const Jogo &jogo);
 int main()
 {
 }
+
+Jogo adquirir(const string &titulo, float valor)
+{
+    Jogo novo;
+    novo.nome = titulo;
+    novo.preco = valor;
+    novo.horas = 0;
+    novo.custo = valor;
+    return novo;
+}
