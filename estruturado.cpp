@@ -44,3 +44,11 @@ void jogar(Jogo &jogo, int tempo)
     if (jogo.horas > 0)
         jogo.custo = jogo.preco / jogo.horas;
 }
+
+void exibir(const Jogo &jogo)
+{
+    cout << jogo.nome << " R$"
+         << jogo.preco << " "
+         << jogo.horas << "h = R$"
+         << jogo.custo << "/h\n";
+}
