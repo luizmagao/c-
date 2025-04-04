@@ -28,3 +28,11 @@ Jogo adquirir(const string &titulo, float valor)
     novo.custo = valor;
     return novo;
 }
+
+void atualizar(Jogo &jogo, float valor)
+{
+    jogo.preco = valor;
+
+    if (jogo.horas > 0)
+        jogo.custo = jogo.preco / jogo.horas;
+}
